@@ -3,14 +3,14 @@ import { Injectable } from '@angular/core';
 interface ISubject {
   id: string;
   name: string;
-  iconName: string;
+  iconName: any;
 }
 
 const subjects: ISubject[] = [
-  { id: '1', name: 'Легалізація/дакументы', iconName: 'fa-passport' },
-  { id: '2', name: 'Медыцына', iconName: 'fa-pills' },
-  { id: '3', name: 'Падаткі', iconName: 'fa-money-check-dollar-pen' },
-  { id: '4', name: 'Нерухомасць', iconName: 'fa-house-chimney-window' },
+  { id: '1', name: 'Дакументы', iconName: 'faPassport' },
+  { id: '2', name: 'Медыцына', iconName: 'faPills' },
+  { id: '3', name: 'Падаткі', iconName: 'faMoneyBill' },
+  { id: '4', name: 'Нерухомасць', iconName: 'faHouseChimneyWindow' },
 ];
 
 @Injectable({

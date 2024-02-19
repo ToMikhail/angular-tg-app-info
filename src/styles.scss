@@ -24,8 +24,49 @@ li {
 
 }
 
+.btn {
+  outline: none;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  background-color: #FAA919;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity:.8;
+  }
+}
+
+.flex-icon {
+  display: block;
+  text-align: center;
+}
+
+.main-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
 .main-list-item {
-  border-bottom: 1px solid #{var(--tg-theme-secondary-bg-color)}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+  // border: 1px solid red;
+
+  border: 1px solid #{var(--tg-theme-secondary-bg-color)}
 }
 
 .contact-list-item {
